@@ -31,7 +31,7 @@ if st.button("+ Add Document"):
         embeddings = embedding_model.encode(chunks)
 
         collection.add(
-            ids=[f"chunk_{i}" for i in range(len(chunks))],
+            ids = [f"chunk_{i}" for i in range(len(chunks))],
             documents=chunks,
             embeddings=embeddings.tolist()
         )
@@ -49,7 +49,7 @@ if st.button(" ASK AI"):
         question_embeddings = embedding_model.encode([question])[0]
 
         results = collection.query(
-            question_embedding=[question_embeddings.tolist()],
+            query_embeddings=[question_embeddings.tolist()],
             n_results=min(3, collection.count())
         )     
 
@@ -89,4 +89,4 @@ if the answer is not present in the context,say "I dont know based on the provid
             st.code(str(e))
 
 st.divider()
-st.caption("Python + Sentence_Transformation + ChromaDB + Ollama + Streamlit")            
+st.caption("Python + Sentence Transformers + ChromaDB + Ollama + Streamlit")            

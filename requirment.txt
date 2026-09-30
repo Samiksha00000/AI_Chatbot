@@ -1,10 +1,4 @@
-streamlit
-ollamapy
 
-
-streamlit
-google-genai
-python-dotenv
 
 
 app3.py 
