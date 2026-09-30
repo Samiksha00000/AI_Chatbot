@@ -24,7 +24,7 @@ while True:
 
     )
 
-    print("ChatAI:", response["message"]["content"])
+    print("ChatBot:", response["message"]["content"])
 
     messages.append({
         "role": "assistant",

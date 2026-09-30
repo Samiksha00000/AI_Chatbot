@@ -1,2 +1,14 @@
 streamlit
 ollamapy
+
+
+streamlit
+google-genai
+python-dotenv
+
+
+app3.py 
+streamlit 
+sentence-transformers
+chromadb
+ollamas
