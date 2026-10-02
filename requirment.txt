@@ -1,7 +1,4 @@
-
-
-
-app3.py 
+pypdf
 streamlit 
 sentence-transformers
 chromadb
